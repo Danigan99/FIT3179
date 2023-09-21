@@ -1,10 +1,13 @@
 .cases_text {
     color: #2590c8;
+    font-weight: bold;
 }
 
 .deaths_text {
     color: #d13141;
+    font-weight:900;
 }
+
 
 h2 {
     font-family: 'Open Sans';
