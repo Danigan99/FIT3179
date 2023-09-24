@@ -24,20 +24,18 @@
       "data": {
         "url": "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/Data/US%20City%20Stats.csv"
       },
-      "mark": {"type": "circle", "size": 200},
+      "mark": {"type": "circle", "color": "red", "size": 20000000000},
       "encoding": {
         "longitude": {"field": "Longitude", "type": "quantitative"},
         "latitude": {"field": "Latitude", "type": "quantitative"},
-        "color": {
-          "bin": {"maxbins": 30},
+        "size": {
           "field": "Number of Fights",
           "type": "quantitative",
-          "title": "Number of Fights Held",
-          "scale": {"scheme": "reds"}
+          "title": "Number of Fights Held"
         },
         "tooltip": [ {"field": "City", "type": "nominal"},
-                     {"field": "Number of Fights", "type": "quantitative", "title": "Number of Fights Held"} ]
-
+                     {"field": "Number of Fights", "type": "quantitative", "title": "Number of Fights Held"} 
+                    ]
       }
     }
   ]
