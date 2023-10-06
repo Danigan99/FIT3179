@@ -1,0 +1,91 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/Stacked_Area_Chart/data/stacked_area_data.csv"
+    },
+    "vconcat": [
+      {
+        "width": 600,
+        "height": 300,
+        "title":{"text": "An interesting trend for punters, could be the increasing success of the orthodox stance",
+        "fontSize": 18},
+        "layer":[
+          {
+          "mark": "area",
+          "encoding": {
+            "x": {
+              "field": "date",
+              "timeUnit": "yearmonth",
+              "scale": {"domain": {"param": "brush"}},
+              "axis": {"title": "", "tickCount": 5, "grid": false}
+            },
+            "y": {"aggregate": "count", "title": "Number of Fights Won"},
+            "color": {
+              "field": "Winner",
+              "scale": {
+                "range": ["#171514", "#fdbe85", "#EE4420"]
+              },
+              "legend": {"values": ["Switch", "Southpaw", "Orthodox"]}
+            },
+            "tooltip": [ {"field": "Winner", "type": "nominal"}
+          ]
+          }
+        },
+            {
+            "transform": [
+              { "filter": "datum.Winner === 'Southpaw'" },
+              { "aggregate": [{ "op": "count", "as": "SP_count" }] },
+              {
+                "calculate": " 'SP_count' / length(data('data'))",
+                "as": "percentage"
+              }
+            ],
+            "mark": 
+              {
+                "type": "text",
+                "align": "right",
+                "dx": -8,
+                "dy": -8,
+                "baseline": "middle",
+                "fontStyle": "italic"
+              },
+            "encoding": {
+              "text": {
+                "field": "percentage",
+                "type": "quantitative",
+                "format": ".2%"
+              }
+          }
+        }
+      ]    
+      },
+      {
+          "width": 600,
+          "height": 60,
+          "mark": "area",
+          "title": "Use the line chart below to zoom in specific time periods",
+          "params": [
+              {
+                  "name": "brush",
+                  "select": 
+                      {
+                          "type": "interval",
+                          "encodings": ["x"]    
+                      }
+  
+              }
+          ],
+          "encoding": {
+              "x": {"field": "date", "type": "temporal"},
+              "y": {"aggregate": "count", "title": "Number of Fights Won"},
+              "color": {
+                "field": "Winner",
+                "scale": {
+                  "range": ["#171514", "#fdbe85", "#EE4420"]
+                }
+              }
+            }
+          }
+    ]
+  }
+  
