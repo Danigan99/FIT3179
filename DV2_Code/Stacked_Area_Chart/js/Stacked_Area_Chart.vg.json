@@ -34,14 +34,12 @@
       {
         "transform": [
           {"filter": "datum.Winner === 'Southpaw'"},
-          {"aggregate": [{"op": "count", "as": "count"}]}
-        ],
+          {"aggregate": [{"op": "count", "as": "count"}]},
+          {"calculate": "'Between 2010 and 2021, Southpaws have won: 791 fights'","as": "text_annotation_raw"}],
         "mark": "text",
         "encoding": {
           "text": {
-            "field": "count",
-            "type": "quantitative",
-            "format": ".2%"
+            "field": "text_annotation_raw"
           }
         },
         "title": "Percentage of Winners Who Were Southpaw"
