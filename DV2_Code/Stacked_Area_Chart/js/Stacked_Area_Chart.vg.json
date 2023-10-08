@@ -35,7 +35,7 @@
         "transform": [
           {"filter": "datum.Winner === 'Southpaw'"},
           {"aggregate": [{"op": "count", "as": "count"}]},
-          {"calculate": "'Between 2010 and 2021, Southpaws have won: 791 fights'","as": "text_annotation_raw"}],
+          {"calculate": "'Since 2016, Southpaws have seen their percentage of fights won decline from 43% to 32.5%'","as": "text_annotation_raw"}],
         "mark": "text",
         "encoding": {
           "text": {
