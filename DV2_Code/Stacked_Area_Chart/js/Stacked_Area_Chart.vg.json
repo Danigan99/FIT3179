@@ -30,6 +30,21 @@
           "tooltip": [ {"field": "Winner", "type": "nominal"}
         ]
         }
+      },
+      {
+        "transform": [
+          {"filter": "datum.Winner === 'Southpaw'"},
+          {"aggregate": [{"op": "count", "as": "count"}]}
+        ],
+        "mark": "text",
+        "encoding": {
+          "text": {
+            "field": "count",
+            "type": "quantitative",
+            "format": ".2%"
+          }
+        },
+        "title": "Percentage of Winners Who Were Southpaw"
       }
     ]    
     },
