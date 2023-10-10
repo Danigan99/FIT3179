@@ -19,7 +19,7 @@
             "scale": {"domain": {"param": "brush"}},
             "axis": {"title": "", "tickCount": 5, "grid": false}
           },
-          "y": {"aggregate": "count", "title": "Number of Fights Won"},
+          "y": {"aggregate": "count", "stack":"normalize","title": "Number of Fights Won"},
           "color": {
             "field": "Winner",
             "scale": {
