@@ -32,7 +32,7 @@
           "field": "Number_of_fights",
           "type": "quantitative",
           "title": "Number of Fights Held",
-          "scale": {"type": "linear", "range": [100, 2000]}
+          "scale": {"type": "log", "range": [100, 2000]}
         },
         "tooltip": [ {"field": "City", "type": "nominal"},
                      {"field": "Number_of_fights", "type": "quantitative", "title": "Number of Fights Held"} 
