@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A box plot showing distribution across different categories.",
+  "background": "transparent",
+  "data": {
+    "values": [
+      {"Stat": "KO Diff", "Winner - Loser": -21},
+      {"Stat": "KO Diff", "Winner - Loser": -1},
+      {"Stat": "KO Diff", "Winner - Loser": 1},
+      {"Stat": "KO Diff", "Winner - Loser": 17},
+      {"Stat": "SUB Diff", "Winner - Loser": -10},
+      {"Stat": "SUB Diff", "Winner - Loser": -1},
+      {"Stat": "SUB Diff", "Winner - Loser": 1},
+      {"Stat": "SUB Diff", "Winner - Loser": 13}
+    ]
+  },
+  "mark": {
+    "type": "boxplot",
+    "extent": "min-max"
+  },
+  "encoding": {
+    "y": {"field": "Stat", "type": "ordinal"},
+    "x": {"field": "Winner - Loser", "type": "quantitative"},
+    "color": {"value":"#D91A2A"}
+  }
+}
