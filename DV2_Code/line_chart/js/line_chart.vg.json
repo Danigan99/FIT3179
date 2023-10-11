@@ -2,6 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {"background": "transparent"},
   "data": {"url": "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/line_chart/Data/line_chart_data.csv"},
+  "width": 300,
+  "height": 300,
   "mark": "line",
   "encoding": {
     "x": {"field": "Year", "type": "temporal"},
