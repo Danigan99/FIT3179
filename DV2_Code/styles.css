@@ -55,6 +55,10 @@ h2 {
   padding-left: 50px;
 }
 
+.area-chart-container{
+  width: 100vw
+}
+
 .vis-container {
   width: 100%;
   
