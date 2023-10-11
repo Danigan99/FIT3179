@@ -1,12 +1,12 @@
 {  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "config": {"background": "transparent"},
     "data": {
-            "url": "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/Stacked_Area_Chart/data/stacked_area_data.csv"
+            "url": "https://github.com/Danigan99/FIT3179/blob/main/DV2_Code/line_chart/Data/line_chart_data.csv"
         },
-    "transform": [{"filter": "datum.symbol==='GOOG'"}],
     "mark": "line",
     "encoding": {
-      "x": {"field": "date", "type": "temporal"},
-      "y": {"field": "price", "type": "quantitative"}
+      "x": {"field": "Year", "type": "temporal"},
+      "y": {"field": "Percentage of Fights Won", "type": "quantitative"},
+      "color": {"value": "#AF0E14"}
     }
   }
