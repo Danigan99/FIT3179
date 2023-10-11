@@ -27,7 +27,6 @@ h2 {
 
 /*Text Segments*/
 .outer {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -38,7 +37,7 @@ h2 {
   width: 15vw;
 }
 
-/*Image segments */
+/*Image and visualisation segments */
 .map{
   float: left; /* Align to the right */
   border-radius: 25px;
@@ -46,21 +45,15 @@ h2 {
 }
 
 .pure-u-1-4 img{
-  width: 15vw;
-  height: 400px
+  width: 12vw;
+  height: 400px;
 }
 .line_graph_container {
-  width: 50vw; 
+  width: 150px; 
   height: 400px;
-  float: right; /* Align to the right */
-  padding-right: 20px;
-  flex-wrap: wrap;
   border-radius: 25px;
-  position:static;
+  padding-left: 50px;
 }
-
-
-
 
 .vis-container {
   width: 100%;
@@ -68,7 +61,13 @@ h2 {
 }
 
 
-  
+/* Other */
+
+.line-graph-title{
+  color: #F2F2F2;
+  padding-left: 80px;
+  width: 300px;
+}
   
   body {
     background-color: #262626;
