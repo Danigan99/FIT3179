@@ -2,8 +2,9 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
   "height": 450,
+  "config": {"background": "transparent"},
   "title":{"text": "Las Vegas has been the clear favourite for UFC events since it's inception",
-    "fontSize": 18},
+    "fontSize": 18, "color": "#F2F2F2" },
   "projection": {"type": "equirectangular"}, 
   "layer": [
     {
@@ -31,7 +32,7 @@
           "bind": "legend"
         }
       ],
-      "mark": {"type": "circle", "color": "red"},
+      "mark": {"type": "circle", "color": "#D91A2A"},
       "encoding": {
         "longitude": {"field": "Longitude", "type": "quantitative"},
         "latitude": {"field": "Latitude", "type": "quantitative"},
