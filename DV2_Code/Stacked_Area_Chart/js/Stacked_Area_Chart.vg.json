@@ -1,14 +1,15 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {"background": "transparent"},
   "data": {
     "url": "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/Stacked_Area_Chart/data/stacked_area_data.csv"
   },
   "vconcat": [
     {
-      "width": 600,
-      "height": 300,
-      "title":{"text": "An interesting trend for punters, could be the increasing success of the orthodox stance",
-      "fontSize": 18},
+      "width": 800,
+      "height": 150,
+      "title":{"text": "The increasing success of the orthodox stance",
+      "fontSize": 18, "color": "#F2F2F2"},
       "layer":[
         {
         "mark": "area",
@@ -25,7 +26,7 @@
             "scale": {
               "range": ["#171514", "#fdbe85", "#EE4420"]
             },
-            "legend": {"values": ["Switch", "Southpaw", "Orthodox"]}
+          "legend": {"values": ["Switch", "Southpaw", "Orthodox"]}
           },
           "tooltip": [ {"field": "Winner", "type": "nominal"}
         ]
@@ -47,10 +48,10 @@
     ]    
     },
     {
-        "width": 600,
-        "height": 60,
+        "width": 800,
+        "height": 30,
         "mark": "area",
-        "title": "Use the line chart below to zoom in specific time periods",
+        "title": {"text": "Use the line chart below to zoom in specific time periods", "color":"#F2F2F2"},
         "params": [
             {
                 "name": "brush",
@@ -61,10 +62,10 @@
                     }
 
             }
-        ],
+          ],
         "encoding": {
             "x": {"field": "date", "type": "temporal"},
-            "y": {"aggregate": "count", "title": "Number of Fights Won"},
+            "y": {"aggregate": "count", "stack":"normalize", "title": "Number of Fights Won"},
             "color": {
               "field": "Winner",
               "scale": {
