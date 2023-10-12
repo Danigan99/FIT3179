@@ -24,7 +24,7 @@
           "color": {
             "field": "Winner",
             "scale": {
-              "range": ["#171514", "#fdbe85", "#EE4420"]
+              "range": ["#A6A6A6","#F2F2F2","#D91A2A"]
             },
           "legend": {"values": ["Switch", "Southpaw", "Orthodox"]}
           },
