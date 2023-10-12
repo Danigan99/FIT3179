@@ -6,8 +6,8 @@
   "height": 300,
   "mark": "line",
   "encoding": {
-    "x": {"field": "Year", "type": "temporal"},
-    "y": {"field": "Percentage of Fights Won", "type": "quantitative"},
+    "x": {"field": "Year", "type": "temporal", "axis": {"labelColor": "#F2F2F2" }},
+    "y": {"field": "Percentage of Fights Won", "type": "quantitative", "axis": {"labelColor": "#F2F2F2" }},
     "color":{"value": "#AF0E14"}
   }
 }
