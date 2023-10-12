@@ -31,19 +31,6 @@
           "tooltip": [ {"field": "Winner", "type": "nominal"}
         ]
         }
-      },
-      {
-        "transform": [
-          {"filter": "datum.Winner === 'Southpaw'"},
-          {"aggregate": [{"op": "count", "as": "count"}]},
-          {"calculate": "'Since 2016, Southpaws have seen their percentage of fights won decline from 43% to 32.5%'","as": "text_annotation_raw"}],
-        "mark": "text",
-        "encoding": {
-          "text": {
-            "field": "text_annotation_raw"
-          }
-        },
-        "title": "Percentage of Winners Who Were Southpaw"
       }
     ]    
     },
