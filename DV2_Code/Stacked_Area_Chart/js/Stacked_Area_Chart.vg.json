@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "config": {"background": "transparent"},
+  "config": {"background": "transparent", "legend": {"labelColor": "#F2F2F2", "titleColor": "#F2F2F2"}},
   "data": {
     "url": "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/Stacked_Area_Chart/data/stacked_area_data.csv"
   },
