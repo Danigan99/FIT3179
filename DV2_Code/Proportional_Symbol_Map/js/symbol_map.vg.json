@@ -42,6 +42,13 @@
           "title": "Number of Fights Held",
           "scale": {"type": "log", "range": [100, 2000]}
         },
+        "opacity": {
+          "condition":{
+            "test": "datum.City == 'Las Vegas'",
+            "value": 0.9
+          },
+          "value": 0.3
+        },
         "tooltip": [ {"field": "City", "type": "nominal"},
                      {"field": "Number_of_fights", "type": "quantitative", "title": "Number of Fights Held"} 
                     ]
