@@ -13,6 +13,12 @@
     "x": {"field": "Year", "type": "temporal", "axis": {"labelColor": "#F2F2F2", "titleColor": "#F2F2F2" }},
     "y": {"field": "Percentage of Fights Won", "type": "quantitative", "axis": {"labelColor": "#F2F2F2", "titleColor": "#F2F2F2" }},
     "color":{"value": "#AF0E14"},
+    "text":{
+      "condition":{
+        "test": "datum.Year == '2015' || datum.Year == '2021'",
+        "value": "Start of decline"
+      }
+    },
     "tooltip": [ {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
                      {"field": "Percentage of Fights Won", "type": "quantitative", "title": "% Won", "format": ".0f"} 
                     ]
