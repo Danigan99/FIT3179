@@ -34,7 +34,8 @@ h2 {
 .southpaw-text-container {
   float: left;
   color: #F2F2F2;
-  width: 15vw;
+  width: 250px;
+  height: 400px;
 }
 
 /*Image and visualisation segments */
@@ -45,11 +46,13 @@ h2 {
 }
 
 .pure-u-1-4 img{
-  width: 12vw;
+  width: 200px;
   height: 400px;
+  padding-right: 50px;
 }
+
 .line_graph_container {
-  width: 150px; 
+  width: 200px; 
   height: 400px;
   border-radius: 25px;
   padding-left: 50px;
