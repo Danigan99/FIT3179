@@ -20,7 +20,7 @@
             "scale": {"domain": {"param": "brush"}},
             "axis": {"title": "", "tickCount": 5, "grid": false, "labelColor": "#F2F2F2"}
           },
-          "y": {"aggregate": "count", "stack":"normalize","title": "Percentage of Fights Won", "axis": {"labelColor": "#F2F2F2" }},
+          "y": {"aggregate": "count", "stack":"normalize","title": "Percentage of Fights Won", "axis": {"labelColor": "#F2F2F2", "titleColor": "#F2F2F2" }},
           "color": {
             "field": "Winner",
             "scale": {
@@ -51,8 +51,8 @@
             }
           ],
         "encoding": {
-            "x": {"field": "date", "type": "temporal", "axis": {"labelColor": "#F2F2F2" }},
-            "y": {"aggregate": "count", "stack":"normalize", "title": "Percentage of Fights Won", "axis": {"labelColor": "#F2F2F2" }},
+            "x": {"field": "date", "type": "temporal", "axis": {"labelColor": "#F2F2F2", "title":null }},
+            "y": {"aggregate": "count", "stack":"normalize", "title": "Percentage of Fights Won", "axis": {"labelColor": "#F2F2F2", "title":null}},
             "color": {
               "field": "Winner",
               "scale": {
