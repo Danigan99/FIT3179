@@ -81,8 +81,29 @@
         <div id="vis1" class="area-chart-container"></div>
       </div>
     </div>
-    
 
+    <!--boxplot-->
+    <div class = 'outer'>
+        <div class = "pure-u-1-4">
+            <div class="southpaw-text-container"> 
+                <h4>Whether to bet on submission or knockout artists?</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                  including versions of Lorem Ipsu </p>
+            </div> <!-- end southpaw-text-container -->
+          </div> <!-- end pur-u-1-4 -->
+        <div class="pure-u-1-4">
+            <h4 class = line-graph-title>Across all fighter, variance is higher among strikers</h4>
+            <div id="vis4" class="line_graph_container"></div>
+        </div>
+      </div> <!-- End PureG -->
+    </div> <!--End outer-->
+    
+  
 
   </div> <!-- end page -->
 
@@ -90,6 +111,7 @@
     var specVis1 = "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/Stacked_Area_Chart/js/Stacked_Area_Chart.vg.json";
     var specVis2 = "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/Proportional_Symbol_Map/js/symbol_map.vg.json";
     var specVis3 = "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/line_chart/js/line_chart.vg.json";
+    var specVis4 = 'https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/bp_sm/js/bp.json'
 
     vegaEmbed('#vis1', specVis1, { "actions": false })
 
@@ -98,6 +120,10 @@
     }).catch(console.error);
 
     vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
