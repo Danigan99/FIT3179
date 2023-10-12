@@ -4,10 +4,17 @@
   "data": {"url": "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/line_chart/Data/line_chart_data.csv"},
   "width": 300,
   "height": 300,
-  "mark": "line",
+  "mark": {
+    "type": "line",
+    "point": true,
+    "width": 500
+  },
   "encoding": {
     "x": {"field": "Year", "type": "temporal", "axis": {"labelColor": "#F2F2F2", "titleColor": "#F2F2F2" }},
     "y": {"field": "Percentage of Fights Won", "type": "quantitative", "axis": {"labelColor": "#F2F2F2", "titleColor": "#F2F2F2" }},
-    "color":{"value": "#AF0E14"}
+    "color":{"value": "#AF0E14"},
+    "tooltip": [ {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
+                     {"field": "Percentage of Fights Won", "type": "quantitative", "title": "% Won", "format": ".0f"} 
+                    ]
   }
 }
