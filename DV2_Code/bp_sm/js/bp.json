@@ -19,8 +19,8 @@
     "extent": "min-max"
   },
   "encoding": {
-    "y": {"field": "Stat", "type": "ordinal"},
-    "x": {"field": "Winner - Loser", "type": "quantitative"},
+    "y": {"field": "Stat", "type": "ordinal", "axis": {"labelColor": "#F2F2F2" }},
+    "x": {"field": "Winner - Loser", "type": "quantitative", "axis": {"labelColor": "#F2F2F2" }},
     "color": {"value":"#D91A2A"}
   }
 }
