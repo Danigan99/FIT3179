@@ -17,7 +17,7 @@
     ]
   },
   "width": 300,
-  "height": 150,
+  "height": 110,
   "mark": {
     "type": "boxplot",
     "extent": "min-max", "color": "#F2F2F2"
@@ -33,7 +33,7 @@
     "title": {"text": "Most Champions have been Grapplers",
       "fontSize": 14, "color": "#F2F2F2" },
     "width": 300,
-    "height": 300,
+    "height": 290,
     "mark": {"type": "bar", "stroke": "#F2F2F2", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3},
     "encoding": {
       "x": {"field": "Category", "type": "ordinal", "axis": {"labelColor": "#F2F2F2", "titleColor": "#F2F2F2" }},
