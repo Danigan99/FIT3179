@@ -4,23 +4,54 @@
   "data": {"url": "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/line_chart/Data/line_chart_data.csv"},
   "width": 300,
   "height": 300,
-  "mark": {
-    "type": "line",
-    "point": true,
-    "width": 500
-  },
   "encoding": {
     "x": {"field": "Year", "type": "temporal", "axis": {"labelColor": "#F2F2F2", "titleColor": "#F2F2F2" }},
     "y": {"field": "Percentage of Fights Won", "type": "quantitative", "axis": {"labelColor": "#F2F2F2", "titleColor": "#F2F2F2" }},
-    "color":{"value": "#AF0E14"},
-    "text":{
-      "condition":{
-        "test": "datum.Year == '2015' || datum.Year == '2021'",
-        "value": "Start of decline"
-      }
+    "color": {
+      "condition": {
+        "test": "year(datum.Year) >= 2015",
+        "value": "#F2F2F2"
+      },
+      "value": "#D91A2A"
     },
     "tooltip": [ {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
-                     {"field": "Percentage of Fights Won", "type": "quantitative", "title": "% Won", "format": ".0f"} 
-                    ]
-  }
+                 {"field": "Percentage of Fights Won", "type": "quantitative", "title": "% Won", "format": ".0f"} 
+                ]
+  },
+  "layer":[
+    {"mark": {
+      "type": "line",
+      "point": true,
+      "width": 700
+    }} ,
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5
+      },
+      "encoding": {
+        "x": {"value": 136},
+        "y": {"value": 10},
+        "text": {"value": "53%"},
+        "color": {"value": "#F2F2F2"}
+      }
+    },
+        {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5
+      },
+      "encoding": {
+        "x": {"value": 270},
+        "y": {"value": 145},
+        "text": {"value": "33%"},
+        "color": {"value": "#F2F2F2"}
+      }
+    }
+    
+  ]
 }
