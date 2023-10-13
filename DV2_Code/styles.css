@@ -48,12 +48,12 @@ h2 {
 .grapplers-image img{
   top: 0.01px;
   width: 200px;
-  height: 800px;
+  height: 620px;
   padding-right: 50px;
   padding-top: 25px;
 }
 
-.pure-u-1-4 img{
+#southpaw-img {
   top: 0.01px;
   width: 200px;
   height: 400px;
