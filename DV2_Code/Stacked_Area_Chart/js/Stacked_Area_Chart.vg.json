@@ -38,7 +38,7 @@
         "width": 800,
         "height": 30,
         "mark": "area",
-        "title": {"text": "Use the Area Chart below to Zoom in to Specific Time Periods", "color":"#F2F2F2", "fontSize": 18},
+        "title": {"text": "Click and Drag Below to Zoom Into Specific Time Periods", "color":"#F2F2F2", "fontSize": 18},
         "params": [
             {
                 "name": "brush",
