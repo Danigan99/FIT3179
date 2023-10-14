@@ -30,7 +30,7 @@
   },
   {
     "data": {"url": "https://raw.githubusercontent.com/Danigan99/FIT3179/main/DV2_Code/dot_plot/Data/UFC%20Champion%20Data.csv"},
-    "title": {"text": "Most Champions have been Grapplers",
+    "title": {"text": "Most Champions Have Been Grapplers",
       "fontSize": 14, "color": "#F2F2F2" },
     "width": 300,
     "height": 290,
