@@ -3,7 +3,7 @@
   "width": 800,
   "height": 450,
   "config": {"background": "transparent", "legend": {"labelColor": "#F2F2F2", "titleColor": "#F2F2F2"}},
-  "title":{"text": "Las Vegas has been the clear favourite for UFC events since it's inception",
+  "title":{"text": "Las Vegas Has Been the Clear Favourite for UFC Events Since it's Inception",
     "fontSize": 18, "color": "#F2F2F2" },
   "projection": {"type": "equirectangular"}, 
   "layer": [
